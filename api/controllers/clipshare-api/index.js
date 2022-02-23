@@ -3,7 +3,7 @@
 const HELPER_BASE = process.env.HELPER_BASE || "/opt/";
 const Response = require(HELPER_BASE + 'response');
 
-const APIKEY = "ÅyîCà”ÇÃAPIKeyÅz";
+const APIKEY = "„Äê‰ªªÊÑè„ÅÆAPIKey„Äë";
 const EXPIRES_IN = 60 * 60 * 1000;
 var clip = null;
 
