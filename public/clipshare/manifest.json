@@ -1,0 +1,36 @@
+{
+	"short_name": "クリップシェア",
+	"name": "クリップシェア",
+	"display": "standalone",
+	"start_url": "index.html",
+	"icons": [
+		{
+			"src": "img/192x192.png",
+			"sizes": "192x192"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "Clip⇒Upload",
+			"description": "クリップボードをアップロードします。",
+			"url": "/clipshare/index.html?cmd=clip2upload",
+			"icons": [
+				{
+					"src": "img/192x192.png",
+					"sizes": "192x192"
+				}
+			]
+		},
+		{
+			"name": "Download⇒Clip",
+			"description": "ダウンロードしてクリップボードにコピーします。",
+			"url": "/clipshare/index.html?cmd=download2clip",
+			"icons": [
+				{
+					"src": "img/192x192.png",
+					"sizes": "192x192"
+				}
+			]
+		}
+	]
+}
