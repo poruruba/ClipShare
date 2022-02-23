@@ -85,7 +85,6 @@ var vue_options = {
         this.base_url = localStorage.getItem('base_url');
         this.apikey = localStorage.getItem('apikey');
         if( this.apikey ){
-            this.clipshare_get();
             switch(searchs.cmd){
                 case 'clip2upload':{
                     this.payload = await this.clip_paste();
@@ -98,6 +97,10 @@ var vue_options = {
                     await this.clipshare_get()
                     alert('ダウンロードしてクリップボードにコピーしました。');
                     window.close();
+                    break;
+                }
+                default:{
+                    this.clipshare_get();
                     break;
                 }
             }
