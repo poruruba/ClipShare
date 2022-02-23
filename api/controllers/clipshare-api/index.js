@@ -15,7 +15,7 @@ exports.handler = async (event, context, callback) => {
 
 	switch(event.path){
 		case "/clipshare-get":{
-			if( !clip && new Date().getTime() > clip.created_at + EXPIRES_IN )
+			if( !clip || new Date().getTime() > clip.created_at + EXPIRES_IN )
 				return new Response({status: "ng"});
 			return new Response({ status: "ok", clip: clip });
 		}
