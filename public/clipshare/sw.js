@@ -1,4 +1,4 @@
-var CACHE_NAME = 'pwa-sample-caches';
+var CACHE_NAME = 'clipshare-pwa-caches';
 self.addEventListener('fetch', function(event) {
   console.log('sw event: fetch called');
 });
